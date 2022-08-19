@@ -33,3 +33,18 @@ footer{
     text-align: right;
     margin-top: -90px;
 }
+
+.grid{
+    display: grid;
+    background-color: green;
+    grid-template-columns: 50px 50px 100px;
+}
+h2{
+    background-color: yellow;
+}
+
+.box{
+    border: 1px red solid;
+}   
+
+
