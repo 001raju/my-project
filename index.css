@@ -1,32 +1,35 @@
+body {
+     margin: 0%; 
+}
 nav{
-    background-color: ;
+    top: 0px;
+    display: block;
     padding: 20px;
-    background-color: blue;
+    background-color: rgb(34, 34, 105);
     width: 100%;
+    
     
     
     
 }
 a{
-    font-size: 30px;
+    font-size: 40px;
     color: white;
     text-decoration-line: none;
     padding: 10px;
    
 }
 h2{
+    width: 100%;
     font-size: 60px;
     text-align: center;
-    padding: 20px;
-    margin-top: 30px;
+   
+    background-color: black;
+    color: white;
+   margin: 0px;
+    
 }
-footer{
-    position: fixed;
- bottom: 0;
-   width: 100%;
-   text-align: center;
-   font-size: 30px;
-}
+
 .searchInput {
     font-size: 40px;
     padding: 20px;
@@ -36,15 +39,61 @@ footer{
 
 .grid{
     display: grid;
-    background-color: green;
-    grid-template-columns: 50px 50px 100px;
+    border: 1px solid transparent;
+    height: 625px;
+    width: 100%; 
+    /* grid-template-columns: 150px 150px;
+    grid-template-rows: 200px 200px 200px; */
+    grid-template:  200px 200px 200px /  300px 300px;
+    gap: 10px;
+    padding: 10px;
+    grid-template-areas: 
+    " top top top"
+    "upleft upleft upright"
+    "left  right right";
+     
+    
 }
-h2{
-    background-color: yellow;
-}
+
 
 .box{
-    border: 1px red solid;
-}   
+    border: 1px transparent;
+    text-align: center;
+    border-radius: 15px;
+   
+}  
+.greeting {
+    grid-area: top;
+    background-color: bisque;
+} 
+.html {
+    grid-area: upleft;
+    background-color: rgb(234, 241, 234);
+}
+.css {
+    grid-area: upright;
+    background-color: rgb(215, 227, 227);
+}
+.js {
+    grid-area: left;
+    background-color: rgb(202, 236, 243);
+}
+.react {
+    grid-area: right;
+    background-color: rgb(229, 236, 229);
 
+}
+footer {
+    display: grid;
+    background-color: rgb(235, 238, 238);
+    grid-template: 0px 30px 100px / 300px 300px 300px;
+    justify-content: center;
+    padding-top: 55px;
+   
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+}
 
